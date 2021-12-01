@@ -26,8 +26,6 @@ In this session, we will train and deploy a transformer-based deep learning mode
 * `images` - Images for the adverse event detection notebook
 * `scripts` - Model training script
     * `train.py`
-* `twitter_data_download` - Notebook to download the original dataset from Twitter
-    * `data_download.ipynb`
 * `adr_classify_twitter_synthetic_data.csv` - Synthetic Tweets dataset
 * `create_synthetic_adr_twitter_data.ipynb` - Notebook to create synthetic tweets based on language translation
 * `sagemaker_adverse_event_detection.ipynb` - Main notebook to train and deploy a model to classify adverse events
@@ -105,7 +103,7 @@ The dataset has been sourced from Twitter and annotated by the Diego Lab, a Biom
 
 The tweets associated with a set of drugs were collected using the generic and brand names of the drugs, and also their possible phonetic misspellings, since it is common for user posts on Twitter to contain spelling errors. Following the collection of the data, a randomly selected sample was then chosen for annotation, which consisted of 10,822 instances. This dataset is from the year 2016, after which, certain users have either edited or deleted their tweets. The data downloaded for this session contains a total of 5,594 instances. The data was annotated by two domain experts under the guidance of a pharmacology expert. Each tweet is annotated for the presence of ADRs. For more information on the data collection and annotation process, refer to the corresponding research paper - [Portable Automatic Text Classification for Adverse Drug Reaction Detection via Multi-corpus Training](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4355323/).
 
-Also, refer to the `twitter_data_download` that contains a script to download the dataset using the Twitter API. Refer to the [dataset link](http://diego.asu.edu/Publications/ADRClassify.html) for more information. Since, we cannot distribute the tweets as per the Twitter Privacy Policy, we create synthetic tweets that are based on the tweets annotated by the Diego Lab, a Biomedical Informatics Lab at Arizona State University (ASU). To create synthetic tweets first download the original tweets using the code in the folder `twitter_data_download`, then execute the code in the notebook `create_synthetic_adr_twitter_data.ipynb`.
+Refer to the [dataset link](http://diego.asu.edu/Publications/ADRClassify.html) for more information. Since, we cannot distribute the tweets as per the Twitter Privacy Policy, we create synthetic tweets that are based on the tweets annotated by the Diego Lab, a Biomedical Informatics Lab at Arizona State University (ASU). To create synthetic tweets first download the original tweets, then execute the code in the notebook `create_synthetic_adr_twitter_data.ipynb`.
 
 
 ## Security
