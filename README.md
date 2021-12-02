@@ -89,7 +89,9 @@ For Platform identifier, select `notebook-al2-v1` to select the latest version o
 
 2. We will use this terminal to download the content for this session from github, using the git client. Inside the terminal window, type the following commands:
 
-TODO - Link to the open-source git repository
+   $ cd SageMaker/
+   
+   $ git clone https://github.com/aws-samples/reinvent2021-smarter-pharmacovogilance-using-aws-machine-learning.git
     
 3. Switch back to the Jupyter notebook home tab, you will see a new folder called `reinvent-2021-pharmacovigilance-builders-session`.
 
